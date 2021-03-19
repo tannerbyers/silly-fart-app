@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import useSound from "use-sound";
 import boopSfx from "./sound.wav";
