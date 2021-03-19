@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import useSound from "use-sound";
+import boopSfx from "./sound.wav";
+
+const BoopButton = () => {
+  const [play] = useSound(boopSfx);
+
+  return <button className="big-button" onClick={play}>Boop!</button>;
+};
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <BoopButton />
       </header>
     </div>
   );
